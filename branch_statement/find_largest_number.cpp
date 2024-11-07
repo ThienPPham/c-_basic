@@ -6,14 +6,7 @@ int main(){
 	int a, b, c;
 	cin >> a >> b >> c;
 	
-	if(a > b && a > c){
-		cout << a;
-	}if( b > a && b > c){
-		cout << b;
-	}if(c > a && c > b){
-		cout << c;
-	}if(a == c && c == b){
-		cout << a;
-	}
+	int max = (a > b && a > c) ? a : (b > c ? b : c);
+	cout << max;
 	return 0;
 }
